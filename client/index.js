@@ -9,7 +9,7 @@ import io from "socket.io-client";
 import "../assets/styles/style.css";
 
 const socket = io.connect("http://localhost:3333");
-
+//hi
 ReactDOM.render(
   <div className="mainContainer">
     <SocketContext.Provider value={socket}>

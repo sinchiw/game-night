@@ -1,8 +1,18 @@
 body {
-  background-image: url('https://i.pinimg.com/originals/f2/f5/13/f2f513ded2eca406b32c468ffd961614.jpg');
+  /* background-image: url("https://i.pinimg.com/originals/f2/f5/13/f2f513ded2eca406b32c468ffd961614.jpg"); */
   background-size: cover;
   text-align: center;
   font-family: sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(89, 231, 208, 0.637)
+  );
+  /* background-color: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  ); */
 }
 
 .oauth {
@@ -87,7 +97,7 @@ button {
 }
 @media only screen and (min-device-width: 800px) {
   #scoreboard {
-    background-image: url('https://i.pinimg.com/originals/f2/f5/13/f2f513ded2eca406b32c468ffd961614.jpg');
+    background-image: url("https://i.pinimg.com/originals/f2/f5/13/f2f513ded2eca406b32c468ffd961614.jpg");
     position: fixed;
     right: 10px;
     top: 10%;
@@ -116,7 +126,7 @@ button {
   }
 
   #scoreboard {
-    background-image: url('https://i.pinimg.com/originals/f2/f5/13/f2f513ded2eca406b32c468ffd961614.jpg');
+    background-image: url("https://i.pinimg.com/originals/f2/f5/13/f2f513ded2eca406b32c468ffd961614.jpg");
     padding: 0.5em;
     border: 0.2em dashed black;
     /* border-radius: 20px; */

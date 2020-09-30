@@ -4,10 +4,11 @@ body {
   text-align: center;
   font-family: sans-serif;
   background-image: linear-gradient(
-    to right,
+    to left,
     rgba(255, 0, 0, 0),
     rgba(89, 231, 208, 0.637)
   );
+  /* background-image: radial-gradient(circle, red, yellow, green); */
   /* background-color: linear-gradient(
     to right,
     rgba(255, 0, 0, 0),
@@ -53,7 +54,7 @@ img {
 
 button {
   border-radius: 5px;
-  background-color: rgb(213, 157, 247);
+  background-color: rgb(163, 157, 247);
   font-weight: bold;
 }
 

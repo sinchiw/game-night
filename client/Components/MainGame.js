@@ -85,45 +85,45 @@ const MainGame = () => {
   }
 
   return (
-    <div className='page'>
-      <div>
-        <h3>
-          <span className='purple-text'>
-            Welcome to the '<span className='teal-text'>{player.room}</span>'
-            room, The Legendary {player.name}
-          </span>
-        </h3>
-        <img className='gif' src={currGif}></img>
-        <h3>
-          The Current Judge is{' '}
-          <span className='underline teal-text'>{currJudge}</span>
-            room, The Legendary {player.name}
-          </span>
-        </h3>
-        <img className='gif' src={currGif}></img>
-        <h3>
-        The Current Judge is{' '}
-          <span className='underline teal-text'>{currJudge}</span>
-            room, The Legendary {player.name}
-          </span>
-        </h3>
-        <img className='gif' src={currGif}></img>
-        <h3>
-      The Current Judge is{' '}
-          <span className='underline teal-text'>{currJudge}</span>
-            room, The Legendary {player.name}
-          </span>
-        </h3 >
-        <img className='gif' src={currGif}></img>
-        <h3>
-    The Current Judge is{' '}
-          <span className='underline teal-text'>{currJudge}</span>
-        </h3>
-      </div >
-  { currentView }
-  < br />
-  <ScoreBoard />
-    </div >
+  //   <div className='page'>
+  //     <div>
+  //       <h3>
+  //         <span className='purple-text'>
+  //           Welcome to the '<span className='teal-text'>{player.room}</span>'
+  //           room, The Legendary {player.name}
+  //         </span>
+  //       </h3>
+  //       <img className='gif' src={currGif}></img>
+  //       <h3>
+  //         The Current Judge is{' '}
+  //         <span className='underline teal-text'>{currJudge}</span>
+  //           room, The Legendary {player.name}
+  //         </span>
+  //       </h3>
+  //       <img className='gif' src={currGif}></img>
+  //       <h3>
+  //       The Current Judge is{' '}
+  //         <span className='underline teal-text'>{currJudge}</span>
+  //           room, The Legendary {player.name}
+  //         </span>
+  //       </h3>
+  //       <img className='gif' src={currGif}></img>
+  //       <h3>
+  //     The Current Judge is{' '}
+  //         <span className='underline teal-text'>{currJudge}</span>
+  //           room, The Legendary {player.name}
+  //         </span>
+  //       </h3 >
+  //       <img className='gif' src={currGif}></img>
+  //       <h3>
+  //   The Current Judge is{' '}
+  //         <span className='underline teal-text'>{currJudge}</span>
+  //       </h3>
+  //     </div >
+  // { currentView }
+  // < br />
+  // <ScoreBoard />
+  //   </div >
   );
 };
 

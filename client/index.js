@@ -11,39 +11,31 @@ import "../assets/styles/style.css";
 const socket = io.connect("http://localhost:3333");
 
 ReactDOM.render(
-  <div className="mainContainer">
-    <SocketContext.Provider value={socket}>
-      <Router>
-        <div>
-          <Link to="/">
-            <button>Home</button>
+  // <div className="mainContainer">
+  <SocketContext.Provider value={socket}>
+    <Router>
+      <Link to="/">
+        <button>Home</button>
+      </Link>
+
+      <Switch>
+        <Route exact path="/">
+          <Link to="/createGame">
+            <button>Create Game</button>
           </Link>
-        </div>
-        <div className="miniContainer">
-          <div className="title">
-            <h3>CS Game Night</h3>
-          </div>
-          <div className="buttonContainer">
-            <Switch>
-              <Route exact path="/">
-                <Link to="/createGame">
-                  <button>Create Game</button>
-                </Link>
-                <Link to="/joinGame">
-                  <button>Join Game</button>
-                </Link>
-              </Route>
-              <Route path="/createGame">
-                <CreateGame />
-              </Route>
-              <Route path="/joinGame">
-                <JoinGame />
-              </Route>
-            </Switch>
-          </div>
-        </div>
-      </Router>
-    </SocketContext.Provider>
-  </div>,
+          <Link to="/joinGame">
+            <button>Join Game</button>
+          </Link>
+        </Route>
+        <Route path="/createGame">
+          <CreateGame />
+        </Route>
+        <Route path="/joinGame">
+          <JoinGame />
+        </Route>
+      </Switch>
+    </Router>
+  </SocketContext.Provider>,
+  // </div>,
   document.getElementById("app")
 );

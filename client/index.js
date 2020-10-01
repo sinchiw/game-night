@@ -2,40 +2,47 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
-import CreateGame from "./components/CreateGame";
-import JoinGame from "./components/JoinGame";
+import CreateGame from "./Components/CreateGame";
+import JoinGame from "./Components/JoinGame";
 import SocketContext from "./context/SocketContext";
 import io from "socket.io-client";
 import "../assets/styles/style.css";
 
-const socket = io.connect("http://localhost:3333");
+// const socket = io.connect('http://localhost:3333');
+const socket = io();
 
+// const socket = io.connect("http://localhost:3333");
+//hi
 ReactDOM.render(
-  // <div className="mainContainer">
   <SocketContext.Provider value={socket}>
     <Router>
-      <Link to="/">
-        <button>Home</button>
-      </Link>
-
       <Switch>
         <Route exact path="/">
-          <Link to="/createGame">
-            <button>Create Game</button>
-          </Link>
-          <Link to="/joinGame">
-            <button>Join Game</button>
-          </Link>
+          <div className="mainContainer">
+            <h2 className="createFont">CS GAME NIGHT</h2>
+            <Link to="/createGame">
+              <button>Create Game</button>
+            </Link>
+            <Link to="/joinGame">
+              <button>Join Game</button>
+            </Link>
+          </div>
         </Route>
         <Route path="/createGame">
+          <Link to="/">
+            <button>Home</button>
+          </Link>
           <CreateGame />
         </Route>
         <Route path="/joinGame">
+          <Link to="/">
+            <button>Home</button>
+          </Link>
           <JoinGame />
         </Route>
       </Switch>
     </Router>
   </SocketContext.Provider>,
-  // </div>,
+
   document.getElementById("app")
 );

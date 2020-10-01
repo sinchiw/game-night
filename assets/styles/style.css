@@ -1,3 +1,10 @@
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   /* background-image: url("https://i.pinimg.com/originals/f2/f5/13/f2f513ded2eca406b32c468ffd961614.jpg"); */
 
@@ -35,11 +42,17 @@ body {
 .mainContainer {
   /* background-color: bisque; */
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   /* height: 80%; */
-  height: 700px;
-  /* align-items: center; */
+  justify-content: space-around;
+  height: 40%;
+  align-items: center;
   /* align-content: center; */
+}
+.mainContainer button {
+  margin: 2vh;
+  height: 60px;
+  width: 240px;
 }
 .miniContainer {
   display: flex;
@@ -48,6 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 90%;
+
   align-content: center;
 }
 
@@ -67,6 +81,13 @@ button {
   width: 120px;
   background-color: rgba(179, 216, 233, 0.829);
   font-weight: bold;
+  box-shadow: 0 2px #999;
+  cursor: pointer;
+}
+button:active {
+  background-color: rgba(107, 128, 138, 0.829);
+  box-shadow: 0 0px #666;
+  transform: translateY(2px);
 }
 
 .groupTable {
@@ -98,10 +119,11 @@ button {
   /* padding-left: 258px; */
   align-items: center;
   width: 50%;
+
   justify-content: space-around;
-  height: 270px;
+  height: auto;
 }
-.divCenter {
+.createGameContainer {
   display: flex;
   justify-content: centers;
   align-items: center;
@@ -120,6 +142,8 @@ button {
 }
 #inputField {
   border-radius: 8px;
+  margin: 10px;
+  height: 30px;
 }
 
 .gameContainer {
@@ -136,8 +160,16 @@ button {
   flex-direction: column;
   align-items: center;
 }
+.gameDetail {
+  background-color: rgba(105, 105, 105, 0.274);
+  border-radius: 5px;
+  justify-items: center;
+  margin-top: 20px;
+  width: 180px;
+  height: auto;
+}
 
-.scoreboard
+/* .scoreboard */
 /* @media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
   #header,
   .page {

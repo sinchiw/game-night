@@ -37,27 +37,31 @@ const CreateGame = () => {
     <GroupsTable groupId={groupId} color={groups[groupId].color} />
   ));
   return (
-    <div>
+    <div className="divCenter">
       <br />
       <h2 className="createFont">Create Game</h2>
       <div className="createFormContainer">
         <form class="createForm" onSubmit={onSubmit}>
           <input
+            id="inputField"
             type="text"
             placeholder="Host Name"
             onChange={(e) => onHostNameTextChange(e)}
           />
           <input
+            id="inputField"
             type="text"
             placeholder="Number of Groups"
             onChange={(e) => onGroupTextChange(e)}
           />
           <input
+            id="inputField"
             type="text"
             placeholder="Enter Challenge #1"
             onChange={(e) => onGameTextChange(e, 0)}
           />
           <input
+            id="inputField"
             type="text"
             placeholder="Enter Challenge #2"
             onChange={(e) => onGameTextChange(e, 1)}

@@ -31,29 +31,34 @@ const JoinGame = () => {
   });
 
   return (
-    <div>
+    <div className="joinGameContainer">
       {!isInGame ? (
         <>
           <br />
-          <h3>Join Game</h3>
-          <form onSubmit={onSubmit}>
-            <input
-              type="text"
-              placeholder="Group Id"
-              onChange={(e) => onChangeGroupId(e)}
-            />
-            <input
-              type="text"
-              placeholder="Full Name"
-              onChange={(e) => onChangeFullName(e)}
-            />
-            <input
-              type="text"
-              placeholder="Host Key (optional)"
-              onChange={(e) => onChangeHostKey(e)}
-            />
-            <button type="submit">Join Game!</button>
-          </form>
+          <h3 className="createFont">Join Game</h3>
+          <div className="createFormContainer2">
+            <form className="createForm" classNameonSubmit={onSubmit}>
+              <input
+                id="inputField"
+                type="text"
+                placeholder="Group Id"
+                onChange={(e) => onChangeGroupId(e)}
+              />
+              <input
+                id="inputField"
+                type="text"
+                placeholder="Full Name"
+                onChange={(e) => onChangeFullName(e)}
+              />
+              <input
+                id="inputField"
+                type="text"
+                placeholder="Host Key (optional)"
+                onChange={(e) => onChangeHostKey(e)}
+              />
+              <button type="submit">Join Game!</button>
+            </form>
+          </div>
         </>
       ) : (
         <Game />

@@ -52,13 +52,13 @@ const Game = () => {
   });
 
   return (
-    <div>
+    <div classname="gameContainer">
       {gameStarted ? (
         <div>
           {gameEnded ? (
             <div>Game Ended</div>
           ) : (
-            <div>
+            <div className="currentChallengeContainer">
               <h1>Current Challenge:</h1>
               {groupInfo.games && JSON.stringify(groupInfo.games[currentIndex])}
               <br></br>
@@ -69,7 +69,9 @@ const Game = () => {
               )}
             </div>
           )}
-          <ScoreBoard />
+          <div className="scoreboardContainer">
+            <ScoreBoard />
+          </div>
         </div>
       ) : (
         <div>

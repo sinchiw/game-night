@@ -9,12 +9,22 @@ body {
     rgba(255, 0, 0, 0),
     rgb(132, 214, 198)
   ); */
-  background: linear-gradient(247deg, #c4efe5, #abe3d6, #7ee9d0, #51d2b4);
-  background-size: 800% 800%;
-  -webkit-animation: AnimationName 20s ease infinite;
-  -moz-animation: AnimationName 20s ease infinite;
-  -o-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
+  background: linear-gradient(
+    270deg,
+    #17347e,
+    #254699,
+    #355dbf,
+    #4c73d4,
+    #6d91ea,
+    #85a3ee,
+    #9db8f9,
+    #9db8f9
+  );
+  background-size: 1600% 1600%;
+  -webkit-animation: AnimationName 21s ease infinite;
+  -moz-animation: AnimationName 21s ease infinite;
+  -o-animation: AnimationName 21s ease infinite;
+  animation: AnimationName 21s ease infinite;
   /* background-image: radial-gradient(circle, red, yellow, green); */
   /* background-color: linear-gradient(
     to right,
@@ -80,20 +90,54 @@ button {
 .createForm {
   display: flex;
   flex-direction: column;
+  background-color: rgba(105, 105, 105, 0.274);
+  border-radius: 8px;
   /* justify-content: center; */
   /* align-content: center; */
   /* align-self: center; */
   /* padding-left: 258px; */
   align-items: center;
-  width: 40%;
-  justify-content: space-between;
+  width: 50%;
+  justify-content: space-around;
   height: 270px;
 }
-
+.divCenter {
+  display: flex;
+  justify-content: centers;
+  align-items: center;
+  flex-direction: column;
+}
 .createFormContainer {
   display: flex;
   justify-content: center;
+  width: 50%;
 }
+
+.createFormContainer2 {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+#inputField {
+  border-radius: 8px;
+}
+
+.gameContainer {
+  background-color: fuchsia;
+}
+.currentChallengeContainer {
+  background-color: gold;
+}
+
+.joinGameContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scoreboard
 /* @media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
   #header,
   .page {
@@ -188,62 +232,47 @@ img {
   padding: 4px 0;
 }
 
-.css-selector {
-  background: linear-gradient(
-    270deg,
-    #a3edda,
-    #7ef0d3,
-    #53d4b3,
-    #31be9a,
-    #0cb68b
-  );
-  background-size: 1000% 1000%;
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  -o-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
-}
 @-webkit-keyframes AnimationName {
   0% {
-    background-position: 0% 13%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 88%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 13%;
+    background-position: 0% 50%;
   }
 }
 @-moz-keyframes AnimationName {
   0% {
-    background-position: 0% 13%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 88%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 13%;
+    background-position: 0% 50%;
   }
 }
 @-o-keyframes AnimationName {
   0% {
-    background-position: 0% 13%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 88%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 13%;
+    background-position: 0% 50%;
   }
 }
 @keyframes AnimationName {
   0% {
-    background-position: 0% 13%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 88%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 13%;
+    background-position: 0% 50%;
   }
 }
